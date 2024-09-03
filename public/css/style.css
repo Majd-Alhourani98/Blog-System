@@ -314,6 +314,14 @@ img {
   right: 0;
 }
 
+#searchClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--gray-light);
+  padding: 15px;
+}
+
 .searchBar.open {
   transform: translateY(0);
   transition: transform 0.1s;
@@ -322,14 +330,6 @@ img {
 .searchBar input {
   margin: 0;
   border: 0;
-}
-
-#searchClose {
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: var(--gray-light);
-  padding: 15px;
 }
 
 .pagination {
