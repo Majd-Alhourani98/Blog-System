@@ -22,6 +22,9 @@ const postSchema = new mongoose.Schema({
   },
 });
 
+// Create text indexes in your Post model or MongoDB shell
+postSchema.index({ title: 'text', body: 'text' });
+
 const Post = mongoose.model('Post', postSchema);
 
 module.exports = Post;
